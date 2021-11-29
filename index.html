@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>CRUD VUE</title>
+  </head>
+  <body>
+   <div class="container mt-5" id="app">
+<!-- hacemos una iterpolacion para llamar al titulo de app.js -->
+        <h3>{{titulo}}</h3> 
+        <input type="text" class="form-control my-3" v-model="newRestaurante" v-on:keyup.enter="add">
+        <button type="button" class="btn btn-primary" @click="add">Añadir</button>
+        
+        <div class="mt-3">
+            <div class="alert alert-secondary" role="alert">
+              Hola
+            </div>
+        </div>
+   </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>  
+    <script src="app.js"></script>
+  </body>
+</html>
