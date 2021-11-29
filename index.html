@@ -16,7 +16,7 @@
         <div class="mt-3" v-for="(item, index) of restaurantes":key="index">
             <ul class="alert alert-secondary" role="alert">
                   <li style="list-style-type: none;">{{item.nombre}}</li>
-                  <button type="button" class="btn btn-outline-danger">Delete</button>
+                  <button type="button" class="btn btn-outline-danger" @click="borrar" >Delete</button>
                   <button type="button" class="btn btn-outline-primary">Modify</button>    
             </ul>
         </div>

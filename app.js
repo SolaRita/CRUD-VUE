@@ -10,12 +10,10 @@ const app = new Vue ({
             this.restaurantes.push ({
                 nombre: this.newRestaurante,
             });
-            this.newRestaurante = '';
-        }
-/*         delete: function  (index){
-           this.movies.splice(index,1);
-       };   */                    
-
-    }
-
-});
+            this.newRestaurante = ''
+        },
+        borrar: function  (index){
+           this.restaurantes.splice(index, 1)
+       } 
+    }                    
+    })
