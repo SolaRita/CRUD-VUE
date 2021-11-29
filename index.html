@@ -13,11 +13,11 @@
         <input type="text" class="form-control my-3" v-model="newRestaurante" v-on:keyup.enter="add">
         <button type="button" class="btn btn-primary" @click="add">Añadir</button>
         
-        <div class="mt-3" v-for="item of restaurantes">
+        <div class="mt-3" v-for="(item, index) of restaurantes":key="index">
             <ul class="alert alert-secondary" role="alert">
                   <li style="list-style-type: none;">{{item.nombre}}</li>
-                  <button type="button" class="btn btn-outline-success">SI</button>
-                  <button type="button" class="btn btn-outline-danger">NO</button>    
+                  <button type="button" class="btn btn-outline-danger">Delete</button>
+                  <button type="button" class="btn btn-outline-primary">Modify</button>    
             </ul>
         </div>
    </div>
