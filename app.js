@@ -11,7 +11,6 @@ const app = new Vue ({
                 nombre: this.newRestaurante,
                 estado:false
             });
-            console.log (this.restaurantes);
             this.newRestaurante = '';
         }
 

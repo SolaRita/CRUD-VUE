@@ -13,10 +13,12 @@
         <input type="text" class="form-control my-3" v-model="newRestaurante" v-on:keyup.enter="add">
         <button type="button" class="btn btn-primary" @click="add">Añadir</button>
         
-        <div class="mt-3">
-            <div class="alert alert-secondary" role="alert">
-              Hola
-            </div>
+        <div class="mt-3" v-for="item of restaurantes">
+            <ul class="alert alert-secondary" role="alert">
+                  <li >{{item.nombre}}</li>
+                  <button type="button" class="btn btn-outline-success">SI</button>
+                  <button type="button" class="btn btn-outline-danger">NO</button>    
+            </ul>
         </div>
    </div>
 
